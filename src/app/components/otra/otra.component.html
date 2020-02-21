@@ -1,0 +1,37 @@
+    <h2 style="text-align: center;">Informacion de proyecto</h2>
+    <h5 style="text-align: center; size: 5px;"><img src="https://www.stickpng.com/assets/images/59f870993cec115efb36234b.png"></h5>
+    
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Problematica</h1>
+        </div>
+        <div class="col">
+            <h1>Solucion</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div  *ngIf="mostrarIf" class="card">
+                <div class="card-otra">
+                {{frase.mensaje}}
+            </div>
+            </div>
+            <button (click)="cambiarIf(mostrarIf)" class="btn btn-success">
+                Mostrar/Ocultar
+            </button>
+            <br>
+            </div> 
+
+            <div class="col">
+                <div  *ngIf="mostrarFor" class="card">
+                    <div *ngFor="let carrera1 of carreras" class="card-otra">
+                        {{carrera1}}
+                </div>
+                </div>    
+                <button (click)="cambiarFor(mostrarFor)" class="btn btn-primary">
+                    Mostrar/Ocultar
+                </button>
+                <br>
+</div>
+

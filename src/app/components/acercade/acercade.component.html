@@ -1,0 +1,32 @@
+<h2 style="text-align: center;">Acerca de..</h2>
+<br>
+    <h5 style="text-align: center;"><img src="https://mextudia.com/wp-content/uploads/2018/07/UTSJR.png" width="150" height="150"></h5>
+    
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 style="text-align: center;"> Nuestra institución</h1>
+            <br>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col">
+            <div  *ngIf="mostrarIf" class="card">
+                <div class="card-acercade" >
+                {{frase.mensaje}}
+               
+
+            </div>
+            </div>
+            <br>
+            <h4 style="text-align: center;"><button (click)="cambiarIf(mostrarIf)" class="btn btn-success" style="background-color: blue;">
+                
+                Información
+            </button>
+            </h4>
+            <br>
+            </div> 
+
+           
+
